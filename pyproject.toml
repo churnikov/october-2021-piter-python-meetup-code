@@ -8,9 +8,15 @@ authors = ["churnikov <churnikov@gmail.com>"]
 python = "^3.9"
 loguru = "^0.5"
 pydantic = {extras = ["dotenv"], version = "^1.8.2"}
+Flask = "^2.0.2"
+click = "^8.0.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
+pre-commit = "^2.15.0"
+
+[tool.poetry.scripts]
+churstore = "app.cli:safe_cli"
 
 [tool.black]
 line-length = 120
